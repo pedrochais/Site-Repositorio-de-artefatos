@@ -1,0 +1,35 @@
+header{
+    background-color: var(--blue);
+    display: flex;
+    flex-direction: column;
+    color: var(--white);
+    text-decoration: none;
+    text-align: center;
+    
+}
+.logo-repository{
+    margin: 15px;
+    font-size: 30px;
+    
+}
+
+header a{
+    list-style-type: none;
+    text-decoration: none;
+    color: var(--white);
+}
+
+ul{
+    display:flex;
+    justify-content: center;
+    text-align: center;
+    
+} 
+ul li {
+    padding: 25px;
+
+}
+
+
+
+
