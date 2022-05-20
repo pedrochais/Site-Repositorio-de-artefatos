@@ -1,0 +1,27 @@
+.titulo {
+	font-size: var(--font-size-lg);
+	background-color: var(--blueblack);
+	color: var(--white);
+	text-align: center;
+	padding: 20px;
+	top: 100%;
+	margin: -5px;
+
+
+}
+
+#banner {
+	background-color: var(--blue);
+}
+
+.resumo {
+	width: 800px;
+	margin: 0 auto;
+	text-align: justify;
+	color: var(--white);
+	padding: 20px;
+}
+
+.sobre img {
+	width: 100%;
+}
