@@ -30,7 +30,7 @@
 
 footer {
     background-color: var(--black);
-    height: 250px;
+    height: 225px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -47,7 +47,6 @@ footer p {
 footer .contacts img {
     width: 25px;
 }
-
 
 footer ul {
     display: flex;
@@ -68,4 +67,3 @@ footer p {
     text-align: justify;
     margin: 0 10px;
 }
-

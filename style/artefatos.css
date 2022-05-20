@@ -78,7 +78,7 @@ hr {
     margin-top: 10px;
 }
 
-#paginacao li{
+#paginacao li {
     margin-bottom: 10px;
 }
 
@@ -96,7 +96,7 @@ hr {
 }
 
 #paginacao li::after {
-    clear:both;
+    clear: both;
     content: "";
     display: block;
 }

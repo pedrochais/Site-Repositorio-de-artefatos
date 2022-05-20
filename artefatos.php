@@ -26,7 +26,6 @@
                     <option value="2">Opção 1</option>
                     <option value="3">Opção 2</option>
                     <option value="4">Opção 2</option>
-                    
                 </select>
                 <button name="buscar" id="buscar" class="btn-default">
                     Buscar
