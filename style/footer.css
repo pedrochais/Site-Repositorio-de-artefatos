@@ -1,4 +1,4 @@
-.contacts{
+.contacts {
     background-color: var(--black);
     display: flex;
     flex-direction: column;
@@ -7,11 +7,13 @@
     text-align: center;
     list-style-type: none;
 }
-.contacts h3{
+
+.contacts h3 {
     font-size: 18px;
-    margin: 20px ;
+    margin: 20px;
 }
-footer p{
+
+footer p {
     list-style-type: none;
     text-decoration: none;
     color: var(--white);
@@ -25,7 +27,7 @@ footer .contacts img {
 
 
 footer ul {
-    display:flex;
+    display: flex;
     flex-direction: column;
     list-style: none;
     padding: 0;
