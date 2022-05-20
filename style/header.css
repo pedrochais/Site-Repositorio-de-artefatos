@@ -20,14 +20,12 @@ header a {
     color: var(--white);
 }
 
-ul {
+ul.menu {
     display: flex;
     justify-content: center;
     text-align: center;
-
 }
 
-ul li {
+ul.menu li {
     padding: 25px;
-
 }

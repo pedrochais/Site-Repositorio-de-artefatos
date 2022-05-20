@@ -23,8 +23,10 @@
                 <label for="etapa-suporte">Etapa de suporte</label>
                 <select name="etapa-suporte">
                     <option value="1" selected>Qualquer um</option>
-                    <option value="2">Valor 2</option>
-                    <option value="3">Valor 3</option>
+                    <option value="2">Opção 1</option>
+                    <option value="3">Opção 2</option>
+                    <option value="4">Opção 2</option>
+                    
                 </select>
                 <button name="buscar" id="buscar" class="btn-default">
                     Buscar
@@ -34,7 +36,48 @@
 
         <!-- Lista de artefatos -->
         <section id="artefatos">
-
+            <div class="artefato">
+                <h2 class="artefato-nome">Guia de cenários de testes exploratórios</h2>
+                <div class="artefato-objetivo">
+                    <h3>Objetivo</h3>
+                    <p>Apresentar um relatório detalhado ao final de cada seção.</p>
+                </div>
+                <div class="artefato-descricao">
+                    <h3>Descrição</h3>
+                    <p>Há campos como: objetivo da missão, área dos testes, ambiente dos testes, testador, duração do teste, defeitos encontrados etc.</p>
+                </div>
+                <div class="botoes">
+                    <button>Acessar fonte</button>
+                    <button>Template</button>
+                </div>
+            </div>
+            <hr>
+            <div class="artefato">
+                <h2 class="artefato-nome">Guia de cenários de testes exploratórios</h2>
+                <div class="artefato-objetivo">
+                    <h3>Objetivo</h3>
+                    <p>Apresentar um relatório detalhado ao final de cada seção.</p>
+                </div>
+                <div class="artefato-descricao">
+                    <h3>Descrição</h3>
+                    <p>Há campos como: objetivo da missão, área dos testes, ambiente dos testes, testador, duração do teste, defeitos encontrados etc.</p>
+                </div>
+                <div class="botoes">
+                    <button>Acessar fonte</button>
+                    <button>Template</button>
+                </div>
+            </div>
+            <nav id="paginacao">
+                <ul>
+                    <li><img src="images/ic_arrow_left.png" alt=""></li>
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>4</li>
+                    <li>5</li>
+                    <li><img src="images/ic_arrow_right.png" alt=""></li>
+                </ul>
+            </nav>
         </section>
     </main>
     <?php include('footer.html'); ?>

@@ -1,8 +1,10 @@
-section#buscar {
-    
+main {
+    background-color: rgb(255, 255, 255);
+    width: 1000px;
+    margin: auto;
 }
 
-form{
+form {
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -15,10 +17,11 @@ input, select {
     margin-bottom: 10px;
     padding: 7.5px;
     border: 1px grey solid;
+    border-radius: 0;
 }
 
 option {
-    height: 50px;
+    border-radius: 0;
 }
 
 button#buscar {
@@ -33,5 +36,72 @@ button#buscar {
 button#buscar:hover {
     background-color: rgb(184, 184, 184);
     border: 1px rgb(184, 184, 184) solid;
+    cursor: pointer;
+}
+
+/* ARTEFATOS */
+
+hr {
+    margin: 20px auto;
+    width: 900px;
+}
+
+#artefatos {
+    margin-top: 10px;
+}
+
+.artefato {
+    margin: auto;
+    width: 900px;
+}
+
+.artefato-nome, .artefato-objetivo, .artefato-descricao {
+    margin-bottom: 10px;
+}
+
+.botoes button {
+    margin: auto;
+    padding: 7.5px;
+    background-color: rgb(207, 207, 207);
+    border: 1px rgb(207, 207, 207) solid;
+}
+
+.botoes button:hover {
+    background-color: rgb(184, 184, 184);
+    border: 1px rgb(184, 184, 184) solid;
+    cursor: pointer;
+}
+
+/* PAGINAÇÃO */
+
+#paginacao {
+    margin-top: 10px;
+}
+
+#paginacao li{
+    margin-bottom: 10px;
+}
+
+#paginacao ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+#paginacao li {
+    font-size: 20px;
+    color: rgb(87, 87, 87);
+    padding: 10px;
+}
+
+#paginacao li::after {
+    clear:both;
+    content: "";
+    display: block;
+}
+
+#paginacao li:hover {
+
     cursor: pointer;
 }
