@@ -42,7 +42,7 @@ main {
     width: 100%;
     text-align: center;
     background-color: #010040ab;
-    padding: 20px;
+    padding: 30px;
     align-items: center;
 }
 
@@ -66,3 +66,33 @@ main {
 .sobre {
     background-color: var(--blue);
 }
+
+@media (max-width: 1280px){
+    .fundo-banner img {
+        width: 150%;
+    }
+    .sobre .resumo {
+        width: 70%;
+    }
+}
+
+@media (max-width: 1151px) {
+    section#banner {
+        height: 300px;
+    }
+}
+@media (max-width: 750px){
+    .fundo-banner img {
+        width: 160%;
+    }
+    .tarja-banner {
+        width: 100%;
+    }
+    .tarja-banner p{
+        width: 100%;
+    }
+    .tarja-banner{
+        width:auto;
+    }
+}
+
