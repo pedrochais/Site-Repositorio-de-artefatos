@@ -120,6 +120,7 @@ print "</pre>";
         <!-- Lista de artefatos -->
         <hr id="breakpoint">
         <section id="artefatos">
+            <p style="text-align: center; margin-bottom: 20px;"><?= $total_rows ?> resultados encontrados.</p>
 
             <?php
             if ($current_page == 0) {
@@ -146,11 +147,17 @@ print "</pre>";
                                 <?= $value['descricao'] ?>
                             </p>
                         </div>
+                        <div class="artefato-funcionamento">
+                            <h3>Funcionamento</h3>
+                            <p>
+                                <?= $value['funcionamento'] ?>
+                            </p>
+                        </div>
                         <div class="botoes">
                             <a href="<?= $value['base_teorica'] ?>" target="_blank">
                                 <button class="btn-default">Acessar fonte</button>
                             </a>
-                            <a href="<?= $value['base_teorica'] ?>" target="_blank">
+                            <a href="<?= $value['template'] ?>" target="_blank">
                                 <button class="btn-default">Template</button>
                             </a>
                         </div>

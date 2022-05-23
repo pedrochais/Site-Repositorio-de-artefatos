@@ -47,7 +47,7 @@ hr {
     width: 100%;
 }
 
-.artefato-nome, .artefato-objetivo, .artefato-descricao {
+.artefato-nome, .artefato-objetivo, .artefato-descricao, .artefato-funcionamento {
     margin-bottom: 10px;
 }
 
