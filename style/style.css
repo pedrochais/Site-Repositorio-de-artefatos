@@ -21,3 +21,29 @@ body {
     font-family: inter;
     background-color: rgb(242, 242, 242);
 }
+
+a {
+    text-decoration: none;
+}
+
+hr#breakpoint {
+    opacity: 0;
+}
+
+/* BOTOES */
+
+.btn-default {
+    transition: .25s;
+    margin: auto;
+    padding: 7.5px;
+    background-color: rgb(207, 207, 207);
+    border: 1px rgb(207, 207, 207) solid;
+}
+
+.btn-default:hover {
+    transition: .25s;
+    background-color: rgb(168, 221, 255);
+    border: 1px rgb(168, 221, 255) solid;
+    cursor: pointer;
+}
+

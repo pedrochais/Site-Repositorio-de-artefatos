@@ -29,14 +29,6 @@ button#buscar {
     margin-top: 10px;
     width: 4rem;
     padding: 7.5px;
-    background-color: rgb(207, 207, 207);
-    border: 1px rgb(207, 207, 207) solid;
-}
-
-button#buscar:hover {
-    background-color: rgb(184, 184, 184);
-    border: 1px rgb(184, 184, 184) solid;
-    cursor: pointer;
 }
 
 /* ARTEFATOS */
@@ -59,20 +51,12 @@ hr {
     margin-bottom: 10px;
 }
 
-.botoes button {
-    margin: auto;
-    padding: 7.5px;
-    background-color: rgb(207, 207, 207);
-    border: 1px rgb(207, 207, 207) solid;
-}
-
-.botoes button:hover {
-    background-color: rgb(184, 184, 184);
-    border: 1px rgb(184, 184, 184) solid;
-    cursor: pointer;
-}
-
 /* PAGINAÇÃO */
+
+h1.no-results {
+    text-align: center;
+    padding: 40px 0;
+}
 
 #paginacao {
     margin-top: 10px;
@@ -92,7 +76,6 @@ hr {
 #paginacao li {
     font-size: 20px;
     color: rgb(87, 87, 87);
-    padding: 10px;
 }
 
 #paginacao li::after {
@@ -102,6 +85,15 @@ hr {
 }
 
 #paginacao li:hover {
-
     cursor: pointer;
+}
+
+#paginacao a {
+    color: grey;
+    padding: 10px;
+}
+
+.active {
+    background-color: rgb(219, 219, 219);
+    border-radius: 5px;
 }

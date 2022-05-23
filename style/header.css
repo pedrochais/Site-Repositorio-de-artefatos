@@ -28,3 +28,7 @@ ul.menu {
 ul.menu li {
     padding: 25px;
 }
+
+ul.menu li:hover {
+    background-color: #020094;
+}
