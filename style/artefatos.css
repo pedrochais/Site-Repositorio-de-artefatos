@@ -2,6 +2,7 @@ main {
     background-color: rgb(255, 255, 255);
     width: 1000px;
     margin: auto;
+    padding: 0 20px;
 }
 
 form {
@@ -35,7 +36,6 @@ button#buscar {
 
 hr {
     margin: 20px auto;
-    width: 900px;
 }
 
 #artefatos {
@@ -44,7 +44,7 @@ hr {
 
 .artefato {
     margin: auto;
-    width: 900px;
+    width: 100%;
 }
 
 .artefato-nome, .artefato-objetivo, .artefato-descricao {
@@ -97,3 +97,31 @@ h1.no-results {
     background-color: rgb(219, 219, 219);
     border-radius: 5px;
 }
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 1280px){
+    main {
+        width: 640px;
+    }
+}
+
+@media (max-width: 640px){
+    main {
+        width: 100%;
+        padding: 0;
+    }
+
+    form {
+        padding: 20px 0;
+    }
+}
+
+@media (max-width: 370px){
+    form {
+        width: 100%;
+    }
+}
+
+
+
