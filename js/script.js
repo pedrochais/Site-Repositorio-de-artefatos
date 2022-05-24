@@ -11,3 +11,9 @@ window.onload = function (){
         menu[2].classList.add('selected')
     }
 }
+
+function scrollToBreakpoint() {
+    if (url.includes('buscar') || (url.includes('pagina_atual'))) {
+        window.scroll(0, breakpoint.offsetTop)
+    }
+}

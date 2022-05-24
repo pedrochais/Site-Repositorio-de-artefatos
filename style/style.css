@@ -47,6 +47,82 @@ hr#breakpoint {
     cursor: pointer;
 }
 
+/* FORMULÁRIO */
+
+.form-default {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    width: 25rem;
+    padding: 20px;
+}
+
+.form-default input, select {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    padding: 7.5px;
+    border: 1px grey solid;
+    border-radius: 0;
+}
+
+.form-default option {
+    border-radius: 0;
+}
+
+button#buscar {
+    margin: auto;
+    margin-top: 10px;
+    width: 4rem;
+    padding: 7.5px;
+}
+
+/* PAGINAÇÃO */
+
+h1.no-results {
+    text-align: center;
+    padding: 40px 0;
+}
+
+#paginacao {
+    margin-top: 10px;
+}
+
+#paginacao li {
+    margin-bottom: 10px;
+}
+
+#paginacao ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+#paginacao li {
+    font-size: 20px;
+    color: rgb(87, 87, 87);
+}
+
+#paginacao li::after {
+    clear: both;
+    content: "";
+    display: block;
+}
+
+#paginacao li:hover {
+    cursor: pointer;
+}
+
+#paginacao a {
+    color: grey;
+    padding: 10px;
+}
+
+.active {
+    background-color: rgb(219, 219, 219);
+    border-radius: 5px;
+}
+
 /* RESPONSIVIDADE */
 
 @media (max-width: 1280px){
@@ -66,5 +142,15 @@ hr#breakpoint {
 
     .logo-repository {
         font-size: 22px;
+    }
+
+    .form-default {
+        padding: 20px 0;
+    }
+}
+
+@media (max-width: 370px){
+    .form-default {
+        width: 100%;
     }
 }

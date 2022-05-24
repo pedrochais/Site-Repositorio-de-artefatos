@@ -5,13 +5,13 @@ main {
     padding: 0 20px;
 }
 
-/* ARTEFATOS */
+/* TESTES */
 
 hr {
     margin: 20px auto;
 }
 
-#artefatos {
+#testes {
     margin-top: 10px;
 }
 
@@ -20,7 +20,7 @@ hr {
     width: 100%;
 }
 
-.artefato-nome, .artefato-objetivo, .artefato-descricao, .artefato-funcionamento {
+.artefato-nome, .artefato-pontos-positivos, .artefato-pontos-negativos, .artefato-proposta-melhorias {
     margin-bottom: 10px;
 }
 
@@ -38,5 +38,3 @@ hr {
         padding: 0;
     }
 }
-
-
