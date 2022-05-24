@@ -29,6 +29,16 @@ ul.menu li {
     padding: 25px;
 }
 
-ul.menu li:hover {
+li.opcoes-menu:hover {
     background-color: #020094;
+}
+
+li.selected {
+    background-color: white;
+    color: var(--blue);
+}
+
+li.selected:hover {
+    background-color: white;
+    color: var(--blue);
 }

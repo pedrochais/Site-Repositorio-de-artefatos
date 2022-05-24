@@ -43,7 +43,7 @@ hr#breakpoint {
 }
 
 .btn-default:hover {
-    transition: .25s; 
+    transition: .25s;
     background-color: rgba(2, 0, 116, 0.81);
     cursor: pointer;
 }
@@ -126,7 +126,7 @@ h1.no-results {
 
 /* RESPONSIVIDADE */
 
-@media (max-width: 1280px){
+@media (max-width: 1280px) {
     * {
         font-size: var(--font-size-md);
     }
@@ -136,7 +136,7 @@ h1.no-results {
     }
 }
 
-@media (max-width: 640px){
+@media (max-width: 640px) {
     * {
         font-size: var(--font-size-sm);
     }
@@ -150,7 +150,7 @@ h1.no-results {
     }
 }
 
-@media (max-width: 370px){
+@media (max-width: 370px) {
     .form-default {
         width: 100%;
     }

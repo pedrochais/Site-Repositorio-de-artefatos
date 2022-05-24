@@ -101,7 +101,7 @@ print "</pre>";
                 <label for="palavra-chave">Palavra-chave</label>
                 <input id="palavra-chave" class="text-box-default" name="palavra-chave" type="text" placeholder="Digite uma ou mais chaves" value="<?= (!empty($_GET['palavra-chave'])) ? $_GET['palavra-chave'] : '' ?>">
                 <label for="etapa-suporte">Etapa de suporte</label>
-                <select name="etapa-suporte" >
+                <select name="etapa-suporte">
                     <option value="" selected>Qualquer um</option>
                     <option value="Avaliação">Avaliação</option>
                     <option value="Casos de teste">Casos de teste</option>

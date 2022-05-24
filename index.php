@@ -33,4 +33,7 @@
             </div>
     </main>
     <?php include('footer.html'); ?>
+
+    <script src="js/script.js"></script>
+    <script src="js/index.js"></script>
 </body>
