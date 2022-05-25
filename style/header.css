@@ -10,7 +10,7 @@ header {
 
 .logo-repository {
     margin: 15px;
-    font-size: var(--font-size-logo);
+    font-size: 28px;
 }
 
 header a {
@@ -41,4 +41,22 @@ li.selected {
 li.selected:hover {
     background-color: white;
     color: var(--blue);
+}
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 1280px) {
+    .logo-repository {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 640px) {
+    .logo-repository {
+        font-size: 22px;
+    }
+
+    ul.menu li {
+        padding: 15px;
+    }
 }

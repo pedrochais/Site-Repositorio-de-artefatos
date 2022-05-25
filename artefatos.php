@@ -99,7 +99,7 @@ print "</pre>";
                 <label for="nome">Nome</label>
                 <input id="nome" class="text-box-default" name="nome" type="search" placeholder="Digite o nome do artefato" value="<?= (!empty($_GET['nome'])) ? $_GET['nome'] : '' ?>">
                 <label for="palavra-chave">Palavra-chave</label>
-                <input id="palavra-chave" class="text-box-default" name="palavra-chave" type="text" placeholder="Digite uma ou mais chaves" value="<?= (!empty($_GET['palavra-chave'])) ? $_GET['palavra-chave'] : '' ?>">
+                <input id="palavra-chave" class="text-box-default" name="palavra-chave" type="text" placeholder="Digite uma palavras-chave" value="<?= (!empty($_GET['palavra-chave'])) ? $_GET['palavra-chave'] : '' ?>">
                 <label for="etapa-suporte">Etapa de suporte</label>
                 <select name="etapa-suporte">
                     <option value="" selected>Qualquer um</option>

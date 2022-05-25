@@ -35,6 +35,5 @@ hr {
 @media (max-width: 640px) {
     main {
         width: 100%;
-        padding: 0;
     }
 }
