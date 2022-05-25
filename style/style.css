@@ -23,6 +23,10 @@ body {
     background-color: rgb(242, 242, 242);
 }
 
+main{
+    min-height: calc(100vh - 350px);
+}
+
 a {
     text-decoration: none;
 }

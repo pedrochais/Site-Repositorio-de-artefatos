@@ -20,7 +20,6 @@
                 </div>
 
                 <div class="tarja-banner">
-                    <h3>Repositório</h3>
                     <p style="text-align: center;">O nosso objetivo é facilitar a pesquisa por artefatos na área de Engenharia de Software</p>
                 </div>
 
@@ -30,7 +29,7 @@
             <div class="titulo"><h3>SOBRE</h3></div>
             <div class="resumo">
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit.
+                Neste repositório é fornececemos um conjunto de artefatos voltados para a etapa de teste a fim de apoiar profissionais de software no processo de garantia da qualidade dos seus sistemas. Na página <a style="color: rgb(219, 219, 219);" href="artefatos.php">Artefatos</a> são apresentados todos os artefatos que estão disponíveis no repositório fazendo breves comentários a respeito dos objetivos e do seu funcionamento, além de disponibilizar a fonte original e seus respectivos templates. Em <a style="color: rgb(219, 219, 219);" href="testes.php">Testes</a> é feita uma aplicação prática para cada um desses artefatos onde foi possível identificar pontos positivos, pontos negativos e propor melhorias.
                 </p>
             </div>
     </main>
