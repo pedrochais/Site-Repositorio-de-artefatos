@@ -71,12 +71,7 @@ $pages = ceil($total_rows / $items_per_page);
 if ($pages == 0) $current_page = 0;
 
 //Caso 'current_page' contiver um valor inválido o usuário será redirecionado para a última página válida
-if ($current_page > $pages) header("Location: artefatos.php?$url pagina_atual=$pages");
-/*
-print "<pre>";
-print_r($items);
-print "</pre>";
-*/
+if ($current_page > $pages) header("Location: artefatos.php?{$url}pagina_atual={$pages}");
 ?>
 <!DOCTYPE html>
 <html lang="pt">

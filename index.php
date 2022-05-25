@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="style/index.css">
-    <title>Repositório</title>
+    <title>Repositório de artefatos para teste exploratório</title>
 </head>
 
 <body>
@@ -29,7 +29,7 @@
             <div class="titulo"><h3>SOBRE</h3></div>
             <div class="resumo">
                 <p>
-                Neste repositório é fornececemos um conjunto de artefatos voltados para a etapa de teste a fim de apoiar profissionais de software no processo de garantia da qualidade dos seus sistemas. Na página <a style="color: rgb(219, 219, 219);" href="artefatos.php">Artefatos</a> são apresentados todos os artefatos que estão disponíveis no repositório fazendo breves comentários a respeito dos objetivos e do seu funcionamento, além de disponibilizar a fonte original e seus respectivos templates. Em <a style="color: rgb(219, 219, 219);" href="testes.php">Testes</a> é feita uma aplicação prática para cada um desses artefatos onde foi possível identificar pontos positivos, pontos negativos e propor melhorias.
+                Neste repositório fornececemos um conjunto de artefatos voltados para a etapa de teste a fim de apoiar profissionais de software no processo de garantia da qualidade dos seus sistemas. Na página <a style="color: rgb(219, 219, 219);" href="artefatos.php">Artefatos</a> são apresentados todos os artefatos que estão disponíveis no repositório fazendo breves comentários a respeito dos objetivos e do seu funcionamento, além de disponibilizar a fonte original e seus respectivos templates. Em <a style="color: rgb(219, 219, 219);" href="testes.php">Testes</a> é feita uma aplicação prática para cada um desses artefatos onde foi possível identificar pontos positivos, pontos negativos e propor melhorias.
                 </p>
             </div>
     </main>
