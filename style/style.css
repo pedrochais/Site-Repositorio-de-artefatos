@@ -43,7 +43,7 @@ hr#breakpoint {
     padding: 10px;
     background-color: rgba(2, 0, 116, 1);
     border: 1px rgb(207, 207, 207) solid;
-    border-radius: 10px;
+    border-radius: 5px;
     color: var(--white);
 }
 
