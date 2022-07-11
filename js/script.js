@@ -12,11 +12,8 @@ function toggleState() {
     if (url.includes('index.php')) {
         menu[0].classList.add('selected')
         menu[0].classList.remove('opcoes-menu')
-    } else if (url.includes('artefatos.php')) {
+    } else if (url.includes('artefatos.php') || url.includes('artefato.php')) {
         menu[1].classList.add('selected')
         menu[1].classList.remove('opcoes-menu')
-    } if (url.includes('testes.php')) {
-        menu[2].classList.add('selected')
-        menu[2].classList.remove('opcoes-menu')
     }
 }
