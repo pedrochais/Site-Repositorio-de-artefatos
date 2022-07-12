@@ -6,6 +6,8 @@ $password = '';
 try{
     $database = new PDO($dsn, $user, $password);
 }catch(PDO $exception){
-    echo $exception;
+    header('Location: errobd.php');
+}catch(PDOException $exception){
+    header('Location: errobd.php');
 }
 ?>
