@@ -115,7 +115,7 @@ if ($current_page > $pages) header("Location: artefatos.php?{$url}pagina_atual={
         <!-- Lista de artefatos -->
         <hr id="breakpoint">
         <section id="artefatos">
-            <p style="text-align: center; margin-bottom: 20px;"><?= $total_rows ?> resultado(s) encontrados.</p>
+            <p style="text-align: center; margin-bottom: 20px;"><?= $total_rows ?> resultado(s) encontrado(s).</p>
 
             <?php
             if ($current_page == 0) {
@@ -126,38 +126,67 @@ if ($current_page > $pages) header("Location: artefatos.php?{$url}pagina_atual={
                 foreach ($items as $key => $value) {
                 ?>
 
-                    <div class="artefato">
+                    <div class="card-default">
                         <h2 class="artefato-nome">
                             <?= $value['nome'] ?>
                         </h2>
+
+                        <h3>1. Dados segundo o proponente</h3>
                         <div class="artefato-objetivo">
-                            <h3>Objetivo</h3>
+                            <h4>1.1. Objetivo</h4>
                             <p>
                                 <?= $value['objetivo'] ?>
                             </p>
                         </div>
                         <div class="artefato-descricao">
-                            <h3>Descrição</h3>
+                            <h4>1.2. Descrição</h4>
                             <p>
                                 <?= $value['descricao'] ?>
                             </p>
                         </div>
                         <div class="artefato-funcionamento">
-                            <h3>Funcionamento</h3>
+                            <h4>1.3. Funcionamento</h4>
+                            <p>
+                                <?= $value['funcionamento'] ?>
+                            </p>
+                        </div>
+
+                        <h3>2. Dados do ponto de vista de engenhereiros de software novatos</h3>
+                        <div class="pontos-positivos">
+                            <h4>2.1. Pontos positivos</h4>
+                            <p>
+                                <?= $value['funcionamento'] ?>
+                            </p>
+                        </div>
+                        <div class="pontos-negativos">
+                            <h4>2.2. Pontos negativos</h4>
+                            <p>
+                                <?= $value['funcionamento'] ?>
+                            </p>
+                        </div>
+                        <div class="proposta-melhoria">
+                            <h4>2.3. Propostas de melhoria</h4>
                             <p>
                                 <?= $value['funcionamento'] ?>
                             </p>
                         </div>
                         <div class="botoes">
+                            <!--
                             <a href="<?= $value['base_teorica'] ?>" target="_blank">
                                 <button class="btn-default">Acessar fonte</button>
+                            </a>
+                            -->
+                            <a href="artefato.php?id_artefato=<?= $value['id'] ?>&nome=<?= $value['nome'] ?>">
+                                <button class="btn-default">Detalhes</button>
                             </a>
                             <a href="<?= $value['template'] ?>" target="_blank">
                                 <button class="btn-default">Template</button>
                             </a>
                         </div>
                     </div>
-                    <hr>
+                    <!--
+                        <hr>
+                    -->
                 <?php
                 } //ENDFOREACH
                 ?>

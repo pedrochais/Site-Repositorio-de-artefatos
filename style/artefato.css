@@ -23,8 +23,6 @@ main {
 }
 
 .secao {
-    text-decoration: underline;
-    text-underline-offset: 3px;
     font-size: 12px;
     color: rgb(170, 170, 170);
     margin-bottom: 10px;

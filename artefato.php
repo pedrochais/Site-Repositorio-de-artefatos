@@ -7,7 +7,7 @@ if (empty($_GET['id_artefato'])) {
 
 $id_artefato = $_GET['id_artefato'];
 
-// Objetivo, descrição e aplicação
+// Para pegar todos os artefatos cadastrados no banco
 $instruction = "
 SELECT * FROM `artefatos` WHERE id = :id_artefato;
 ";
@@ -17,27 +17,11 @@ $statement->bindValue(':id_artefato', $id_artefato);
 $statement->execute();
 $item_artefato = $statement->fetch(PDO::FETCH_ASSOC);
 
-// Pontos positivos, pontos negativos e propostas de melhoria
-$instruction = "
-SELECT * FROM `testes` WHERE id = :id_artefato;
-";
-
-$statement = $database->prepare($instruction);
-$statement->bindValue(':id_artefato', $id_artefato);
-$statement->execute();
-$item_teste = $statement->fetch(PDO::FETCH_ASSOC);
-
+// Caso nenhum artefato seja encontrado no banco, redireciona o usuário para a página de artefatos
 if (empty($item_artefato)) {
     header('Location: artefatos.php');
 }
 
-if (empty($item_teste)) {
-    $pontos_positivos = $pontos_negativos = $proposta_melhoria = "Indisponível.";
-} else {
-    $pontos_positivos = $item_teste['pontos_positivos'];
-    $pontos_negativos = $item_teste['pontos_negativos'];
-    $proposta_melhoria = $item_teste['proposta_melhorias'];
-}
 ?>
 <!DOCTYPE html>
 <html lang="pt">
@@ -77,13 +61,24 @@ if (empty($item_teste)) {
             <span class="secao">Dados do ponto de vista de engenhereiros de software novatos</span>
             <section id="dados-eng-software-novatos">
                 <span id="pontos-positivos"><b>Pontos positivos</b> </span>
-                <p class="info"> <?= $pontos_positivos ?> </p>
+                <p class="info">
+                    <?=
+                    empty($item_artefato['pontos_positivos']) ? "Indisponível." : $item_artefato['pontos_positivos']
+                    ?>
+                </p>
                 <span id="pontos-negativos"><b>Pontos negativos</b> </span>
-                <p class="info"> <?= $pontos_negativos ?> </p>
+                <p class="info">
+                    <?=
+                    empty($item_artefato['pontos_negativos']) ? "Indisponível." : $item_artefato['pontos_negativos']
+                    ?>
+                </p>
                 <span id="proposta-melhorias"><b>Propostas de melhorias</b> </span>
-                <p class="info"> <?= $proposta_melhoria ?> </p>
+                <p class="info">
+                    <?=
+                    empty($item_artefato['proposta_melhorias']) ? "Indisponível." : $item_artefato['proposta_melhorias']
+                    ?>
+                </p>
             </section>
-
 
             <span class="secao">Material</span>
             <section id="material">

@@ -20,8 +20,37 @@ hr {
     width: 100%;
 }
 
-.artefato-nome, .artefato-objetivo, .artefato-descricao, .artefato-funcionamento {
-    margin-bottom: 10px;
+.artefato-nome, .artefato-objetivo, .artefato-descricao, .artefato-funcionamento, .pontos-positivos, .pontos-negativos, .proposta-melhoria {
+    margin-bottom: 5px;
+    text-indent: 10px;
+}
+
+.artefato-objetivo, .artefato-descricao, .artefato-funcionamento, .pontos-positivos, .pontos-negativos, .proposta-melhoria {}
+
+.botoes {
+    margin-top: 10px;
+}
+
+/* CARD */
+
+.card-default {
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 7.5px;
+    box-shadow: 0 2.5px 5px rgba(0, 0, 0, 0.25);
+    width: 90%;
+    margin: auto;
+    margin-bottom: 30px;
+    padding: 15px 20px;
+}
+
+.card-default h3 {
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.card-default h4 {
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 /* RESPONSIVIDADE */
@@ -29,6 +58,10 @@ hr {
 @media (max-width: 1280px) {
     main {
         width: 640px;
+    }
+
+    .card-default {
+        width: 95%;
     }
 }
 
