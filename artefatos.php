@@ -1,6 +1,9 @@
 <?php
 require_once('script/conexao.php');
 
+// Quantidade máxima de caracteres que terá para cada informação contida nos cards dos artefatos.
+const MAX_CHA = 95;
+
 //Verifica existência da variável 'pagina_atual'
 if (!empty($_GET['pagina_atual'])) {
     $current_page = $_GET['pagina_atual'];
@@ -124,6 +127,20 @@ if ($current_page > $pages) header("Location: artefatos.php?{$url}pagina_atual={
                 <?php
             } else {
                 foreach ($items as $key => $value) {
+                    $objetivo =           $value['objetivo'];
+                    $descricao =          $value['descricao'];
+                    $funcionamento =      $value['funcionamento'];
+                    $pontos_positivos =   $value['pontos_positivos'];
+                    $pontos_negativos =   $value['pontos_negativos'];
+                    $proposta_melhorias = $value['proposta_melhorias'];
+
+                    // Caso alguma informação exceda o número máximo de caracteres, a string será fatiada até o valor máximo (constante MAX_CHA).
+                    if (strlen($value['objetivo']) > MAX_CHA)           $objetivo = substr($value['objetivo'], 0, MAX_CHA) . '[...]';
+                    if (strlen($value['descricao']) > MAX_CHA)          $descricao = substr($value['descricao'], 0, MAX_CHA) . '[...]';
+                    if (strlen($value['funcionamento']) > MAX_CHA)      $funcionamento = substr($value['funcionamento'], 0, MAX_CHA) . '[...]';
+                    if (strlen($value['pontos_positivos']) > MAX_CHA)   $pontos_positivos = substr($value['pontos_positivos'], 0, MAX_CHA) . '[...]';
+                    if (strlen($value['pontos_negativos']) > MAX_CHA)   $pontos_negativos = substr($value['pontos_negativos'], 0, MAX_CHA) . '[...]';
+                    if (strlen($value['proposta_melhorias']) > MAX_CHA) $proposta_melhorias = substr($value['proposta_melhorias'], 0, MAX_CHA) . '[...]';
                 ?>
 
                     <div class="card-default">
@@ -135,19 +152,19 @@ if ($current_page > $pages) header("Location: artefatos.php?{$url}pagina_atual={
                         <div class="artefato-objetivo">
                             <h4>1.1. Objetivo</h4>
                             <p>
-                                <?= $value['objetivo'] ?>
+                                <?= $objetivo ?>
                             </p>
                         </div>
                         <div class="artefato-descricao">
                             <h4>1.2. Descrição</h4>
                             <p>
-                                <?= $value['descricao'] ?>
+                                <?= $descricao ?>
                             </p>
                         </div>
                         <div class="artefato-funcionamento">
                             <h4>1.3. Funcionamento</h4>
                             <p>
-                                <?= $value['funcionamento'] ?>
+                                <?= $funcionamento ?>
                             </p>
                         </div>
 
@@ -155,27 +172,22 @@ if ($current_page > $pages) header("Location: artefatos.php?{$url}pagina_atual={
                         <div class="pontos-positivos">
                             <h4>2.1. Pontos positivos</h4>
                             <p>
-                                <?= $value['funcionamento'] ?>
+                                <?= $pontos_positivos ?>
                             </p>
                         </div>
                         <div class="pontos-negativos">
                             <h4>2.2. Pontos negativos</h4>
                             <p>
-                                <?= $value['funcionamento'] ?>
+                                <?= $pontos_negativos ?>
                             </p>
                         </div>
                         <div class="proposta-melhoria">
                             <h4>2.3. Propostas de melhoria</h4>
                             <p>
-                                <?= $value['funcionamento'] ?>
+                                <?= $proposta_melhorias ?>
                             </p>
                         </div>
                         <div class="botoes">
-                            <!--
-                            <a href="<?= $value['base_teorica'] ?>" target="_blank">
-                                <button class="btn-default">Acessar fonte</button>
-                            </a>
-                            -->
                             <a href="artefato.php?id_artefato=<?= $value['id'] ?>&nome=<?= $value['nome'] ?>">
                                 <button class="btn-default">Detalhes</button>
                             </a>
@@ -184,9 +196,6 @@ if ($current_page > $pages) header("Location: artefatos.php?{$url}pagina_atual={
                             </a>
                         </div>
                     </div>
-                    <!--
-                        <hr>
-                    -->
                 <?php
                 } //ENDFOREACH
                 ?>
