@@ -2,7 +2,7 @@
 require_once('script/conexao.php');
 
 // Quantidade máxima de caracteres que terá para cada informação contida nos cards dos artefatos.
-const MAX_CHA = 95;
+const MAX_CHA = 80;
 
 //Verifica existência da variável 'pagina_atual'
 if (!empty($_GET['pagina_atual'])) {
@@ -148,6 +148,12 @@ if ($current_page > $pages) header("Location: artefatos.php?{$url}pagina_atual={
                             <?= $value['nome'] ?>
                         </h2>
 
+                        <div class="imagem">
+                            <a href="artefato.php?id_artefato=<?= $value['id'] ?>&nome=<?= $value['nome'] ?>">
+                                <img style="width: 100%" src="images/artefatos/<?= $value['imagem'] ?>" alt="<?= $value['nome'] ?>">
+                            </a>
+                        </div>
+
                         <h3>1. Dados segundo o proponente</h3>
                         <div class="artefato-objetivo">
                             <h4>1.1. Objetivo</h4>
@@ -172,19 +178,19 @@ if ($current_page > $pages) header("Location: artefatos.php?{$url}pagina_atual={
                         <div class="pontos-positivos">
                             <h4>2.1. Pontos positivos</h4>
                             <p>
-                                <?= $pontos_positivos ?>
+                                <?= empty($pontos_positivos) ? "Indisponível." : $pontos_positivos ?>
                             </p>
                         </div>
                         <div class="pontos-negativos">
                             <h4>2.2. Pontos negativos</h4>
                             <p>
-                                <?= $pontos_negativos ?>
+                                <?= empty($pontos_negativos) ? "Indisponível." : $pontos_negativos ?>
                             </p>
                         </div>
                         <div class="proposta-melhoria">
                             <h4>2.3. Propostas de melhoria</h4>
                             <p>
-                                <?= $proposta_melhorias ?>
+                                <?= empty($proposta_melhorias) ? "Indisponível." : $proposta_melhorias ?>
                             </p>
                         </div>
                         <div class="botoes">

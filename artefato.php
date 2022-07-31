@@ -43,7 +43,7 @@ if (empty($item_artefato)) {
             <span class="secao">Artefato</span>
             <h2 id="nome-artefato"> <?= $item_artefato['nome'] ?> </h2>
 
-            <div class="imagem"></div>
+            <div class="imagem"><img style="width: 100%" src="images/artefatos/<?= $item_artefato['imagem'] ?>" alt="Casos de teste que se repetem em todos os serviços"></div>
 
             <span class="secao">Dados segundo o proponente</span>
             <section id="dados-proponente">
