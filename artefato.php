@@ -90,7 +90,8 @@ if (empty($item_artefato)) {
                 </span>
                 <span class="info">
                     <b>Arquivo:</b>
-                    <a href="">
+                    <a href="<?= $item_artefato['arquivo'] ?>" target="_blank">
+                        <?= $item_artefato['arquivo'] ?>
                     </a>
                 </span>
                 <span class="info">

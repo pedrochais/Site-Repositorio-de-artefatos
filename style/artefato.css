@@ -45,6 +45,17 @@ a {
 
 .info {
     margin-bottom: 5px;
+    word-wrap: break-word;
+    display: flex;
+    flex-direction: row;
+}
+
+.info b {
+    margin-right: 5px;
+}
+
+.info a {
+    word-wrap: break-word;
 }
 
 /* RESPONSIVIDADE */
@@ -59,6 +70,10 @@ a {
     h2#nome-artefato {
         text-align: center;
         font-size: 1.25em;
+    }
+    
+    b {
+        font-size: 14px;
     }
 
     .imagem {

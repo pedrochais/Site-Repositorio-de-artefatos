@@ -20,7 +20,7 @@
                 </div>
 
                 <div class="tarja-banner">
-                    <p style="text-align: center;">O nosso objetivo é facilitar a pesquisa por artefatos na área de Engenharia de Software</p>
+                    <p style="text-align: center;">O nosso objetivo é facilitar a pesquisa por artefatos de Teste Exploratório na área de Engenharia de Software</p>
                 </div>
 
             </div>

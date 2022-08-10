@@ -23,7 +23,7 @@ hr {
 }
 
 .imagem:hover {
-    filter: brightness(75%);
+    filter: brightness(95%);
     cursor: pointer;
 }
 
@@ -38,7 +38,6 @@ hr {
 
 .artefato-nome, .artefato-objetivo, .artefato-descricao, .artefato-funcionamento, .pontos-positivos, .pontos-negativos, .proposta-melhoria {
     margin-bottom: 5px;
-    text-indent: 10px;
 }
 
 .artefato-objetivo, .artefato-descricao, .artefato-funcionamento, .pontos-positivos, .pontos-negativos, .proposta-melhoria {}
