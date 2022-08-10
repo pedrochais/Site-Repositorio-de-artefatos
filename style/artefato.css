@@ -40,7 +40,7 @@ a {
     float: right;
     margin-left: 25px;
     margin-top: 10px;
-    margin-bottom: 20px;
+    /*margin-bottom: 20px;*/
 }
 
 .info {

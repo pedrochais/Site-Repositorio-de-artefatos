@@ -197,8 +197,11 @@ if ($current_page > $pages) header("Location: artefatos.php?{$url}pagina_atual={
                             <a href="artefato.php?id_artefato=<?= $value['id'] ?>&nome=<?= $value['nome'] ?>">
                                 <button class="btn-default">Detalhes</button>
                             </a>
+                            <a href="<?= $value['base_teorica'] ?>" target="_blank">
+                                <button class="btn-default">Fonte</button>
+                            </a>
                             <a href="<?= $value['template'] ?>" target="_blank">
-                                <button class="btn-default">Template</button>
+                                <button class="btn-default">Arquivo</button>
                             </a>
                         </div>
                     </div>

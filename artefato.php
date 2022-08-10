@@ -39,11 +39,12 @@ if (empty($item_artefato)) {
     <?php include('header.html'); ?>
 
     <main>
+    <div class="imagem"><img style="width: 100%" src="images/artefatos/<?= $item_artefato['imagem'] ?>" alt="Casos de teste que se repetem em todos os serviços"></div>
         <section id="conteudo">
             <span class="secao">Artefato</span>
             <h2 id="nome-artefato"> <?= $item_artefato['nome'] ?> </h2>
 
-            <div class="imagem"><img style="width: 100%" src="images/artefatos/<?= $item_artefato['imagem'] ?>" alt="Casos de teste que se repetem em todos os serviços"></div>
+            
 
             <span class="secao">Dados segundo o proponente</span>
             <section id="dados-proponente">
@@ -79,9 +80,10 @@ if (empty($item_artefato)) {
                     ?>
                 </p>
             </section>
-
+            <!--
             <span class="secao">Material</span>
             <section id="material">
+
                 <span class="info">
                     <b>Fonte:</b>
                     <a href="<?= $item_artefato['base_teorica'] ?>" target="_blank">
@@ -90,21 +92,22 @@ if (empty($item_artefato)) {
                 </span>
                 <span class="info">
                     <b>Arquivo:</b>
-                    <a href="<?= $item_artefato['arquivo'] ?>" target="_blank">
-                        <?= $item_artefato['arquivo'] ?>
-                    </a>
-                </span>
-                <span class="info">
-                    <b>Template:</b>
                     <a href="<?= $item_artefato['template'] ?>" target="_blank">
                         <?= $item_artefato['template'] ?>
                     </a>
                 </span>
             </section>
+            -->
         </section>
         <div class="botao-rodape">
             <a href="artefatos.php" id="btn-voltar">
                 <button class="btn-default">Voltar para artefatos</button>
+            </a>
+            <a href="<?= $item_artefato['base_teorica'] ?>" target="_blank">
+                <button class="btn-default">Fonte</button>
+            </a>
+            <a href="<?= $item_artefato['template'] ?>" target="_blank">
+                <button class="btn-default">Arquivo</button>
             </a>
         </div>
     </main>
